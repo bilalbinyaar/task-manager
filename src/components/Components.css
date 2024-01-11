@@ -1,194 +1,190 @@
 .todo-main {
-    width: 100%;
+  width: 100%;
 }
 
 .todo {
-    height: 230px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--color-primary);
+  height: 230px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-primary);
 }
 
 .todo h2 {
-    margin-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .tasks-wrapper {
-    width: 100%;
-    /* background-color: #ececec99; */
-    background-color: var(--color-bg);
-    padding: 3rem 2rem;
-    height: 100%;
+  width: 100%;
+  /* background-color: #ececec99; */
+  background-color: var(--color-bg);
+  padding: 3rem 2rem;
+  height: 72vh;
+  max-height: 100%;
 }
 
 .tasks-wrapper-inner {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .tasks-wrapper-inner h3 {
-    margin-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 /* Modal CSS */
 .css-1wnsr1i {
-    border: 2px solid var(--color-primary) !important;
-    border-radius: 8px;
-    background-color: white !important;
+  border: 2px solid var(--color-primary) !important;
+  border-radius: 8px;
+  background-color: white !important;
 }
-
 
 /* Create Task Component CSS */
 .modal-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.4rem;
 }
 
 .form-group {
-    margin-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 0.6rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .form-group input:focus {
-    outline: none;
+  outline: none;
 }
 
 .form-group textarea {
-    width: 100%;
-    padding: 0.6rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
-    resize: vertical;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  resize: vertical;
 }
 
 .form-group textarea:focus {
-    outline: none;
+  outline: none;
 }
-
 
 /* Task Card CSS */
 .task-cards-main {
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
 }
 
 .task-cards {
-    padding: 1rem;
-    margin: 1rem 0;
-    background-color: var(--color-bg-cards);
-    border-radius: 8px;
-    border-top: 5px solid var(--color-primary);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
-    transition: all .3s ease-in-out;
-    width: 334px;
-    height: 180px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--color-bg-cards);
+  border-radius: 8px;
+  border-top: 5px solid var(--color-primary);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  width: 334px;
+  height: 180px;
 }
 
 .task-cards:hover {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.4);
-    transition: all .3s ease-in-out;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
 }
 
 .card-top {
-    margin-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .card-top h4 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .task-header {
-    margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .task-header p {
-    overflow: hidden;
-    display: -webkit-box;
-   -webkit-line-clamp: 1;
-   -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .task-footer {
-    display: flex;
-    justify-content: flex-end;
-    height: 75px;
-    align-items: flex-end;
-    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 75px;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .task-icons {
-    padding: 0.5rem;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
-    margin: 0px 5px;
-    cursor: pointer;
-    color: var(--color-text);
-    border: 1px solid var(--color-box-shadow);
+  padding: 0.5rem;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin: 0px 5px;
+  cursor: pointer;
+  color: var(--color-text);
+  border: 1px solid var(--color-box-shadow);
 }
 
 .task-icons:hover {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-width: 476px) {
-    .task-cards {
-        max-width: 100%;
-    }
+  .task-cards {
+    max-width: 100%;
+  }
 }
 
 /* Weather CSS */
 .todo-header {
-    background-color: var(--color-primary);
-    padding: 2rem 2rem 0rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--color-primary);
+  padding: 2rem 2rem 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title h3 {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .temperature p {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .theme {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: flex-end;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .theme h3 {
-    margin-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
 }
-
 
 @media only screen and (max-width: 476px) {
-    .title h3 {
-        font-size: 14px;
-    }
+  .title h3 {
+    font-size: 14px;
+  }
 
-    .theme h3 {
-        font-size: 14px;
-    }
+  .theme h3 {
+    font-size: 14px;
+  }
 }
-
-
